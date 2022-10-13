@@ -1,4 +1,4 @@
-# -Postgresql-
+# -Postgresql-functions generate data
 
 ------------------- 生成自定义条数据 id 自增-----------------------------------------    
 select *,'1' as col_2 ,'abc' as col_3 from generate_series(1,100) as id  
