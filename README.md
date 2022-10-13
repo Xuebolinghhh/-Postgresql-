@@ -18,5 +18,6 @@ select my_random_num(1,3)
 
 -------------------- 生成随机姓名 ---------------------------------------------------
 select get_random_name(-1) from generate_series(1,100) --输入1:生成男性姓名，输入2:生成女性姓名,输入-1,随机生成姓名
-输出： ![image](https://user-images.githubusercontent.com/51266324/195485162-1fe4b624-5a40-4c7e-ac4c-7d64b6e43120.png)
+输出：   
+![image](https://user-images.githubusercontent.com/51266324/195485162-1fe4b624-5a40-4c7e-ac4c-7d64b6e43120.png)
 
