@@ -13,8 +13,10 @@ select md5(random()::text)   --用于id之类的生成
 -------------------- 生成随机坐标 ---------------------------------------------------
 select round((random()::numeric*360-180),6) as lng,round((random()::numeric*170-85),6)
 
------- 随机取[a,b)之间的整数 -----------
+------ 随机取[a,b)之间的整数 --------------------------------------------------------
 select my_random_num(1,3)
 
 -------------------- 生成随机姓名 ---------------------------------------------------
-select get_random_name(-1) from generate_series(1,100) --输入1:生成男性姓名，输入2:生成女性姓名,输入-1,随机生成性别姓名
+select get_random_name(-1) from generate_series(1,100) --输入1:生成男性姓名，输入2:生成女性姓名,输入-1,随机生成姓名
+输出： ![image](https://user-images.githubusercontent.com/51266324/195485162-1fe4b624-5a40-4c7e-ac4c-7d64b6e43120.png)
+
